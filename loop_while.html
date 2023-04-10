@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button onclick="bt1()">bài tập 1</button>
+    <button onclick="bt2()">bài tập 2</button>
+</body>
+</html>
+
+<script>
+// bài 1
+function bt1() {
+  var number = prompt("nhập số: ");
+  var sum = 0;
+  while (number != -1){
+    number = prompt("nhập số")
+    alert(number);
+    sum = sum + number;
+  }
+  alert(sum);
+}
+
+
+//bài 2
+function bt2() {
+  var i =1;
+  while (i < 100){
+    document.write("<hr width = " + i + "%>");
+    i++;
+  }
+}
+</script>

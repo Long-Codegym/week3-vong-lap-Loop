@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+   <div>
+      <p style="font-size: 20px">Bài 1</p>
+       <p id="demo">kết quả</p>
+   </div>
+
+    <div>
+        <p style="font-size: 20px">Bài 2</p>
+        <input id="number" type="text" placeholder="nhập số">
+        <button onclick="bt2()">tính toán</button>
+        <p id="kq1">kết quả</p>
+    </div>
+<script>
+
+    //bài 1
+    let text= "";
+ for (let i=0 ; i<5 ; i=i+1) {
+        text += "Hello Long " + i + "<br>";
+ }
+ document.getElementById("demo").innerHTML = text;
+
+    //bài 2
+function bt2() {
+    let num = parseInt(document.getElementById("number").value);
+    let total = 0;
+    for (let a=0 ; a<num ; a +=1){
+        total = total + a;
+    }
+    document.getElementById("kq1").innerHTML = total;
+}
+</script>
